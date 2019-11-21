@@ -1,6 +1,5 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Drawing;
 using CoreGraphics;
 using UIKit;
 using Xamarin.Forms;
@@ -324,7 +323,7 @@ namespace Xfx.Controls.iOS.Renderers
 
         private UIToolbar NumberpadAccessoryView()
         {
-            return new UIToolbar(new RectangleF(0.0f, 0.0f, (float)Control.Frame.Size.Width, 44.0f))
+            return new UIToolbar(new System.Drawing.RectangleF(0.0f, 0.0f, (float)Control.Frame.Size.Width, 44.0f))
             {
                 Items = new[]
                 {
